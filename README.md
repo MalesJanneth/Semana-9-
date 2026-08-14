@@ -48,4 +48,4 @@ restaurante_app/
 ├── main.py
 └── README.md
 
-![alt text](image.png)
+
