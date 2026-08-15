@@ -200,24 +200,6 @@ Para ejecutar el proyecto se necesita:
 - Visual Studio Code u otro editor compatible con Python.
 - Terminal o consola.
 
-### Ejecución
-
-Primero se debe abrir la terminal dentro de la carpeta principal del proyecto.
-
-Ejecutar:
-
-    python main.py
-
-Si el sistema utiliza python3, ejecutar:
-
-    python3 main.py
-
-Después de ejecutar el programa aparecerá el menú principal.
-
-El usuario podrá seleccionar una opción e ingresar los datos solicitados mediante la consola.
-
-El programa continuará ejecutándose hasta seleccionar la opción 9. Salir.
-
 ## Separación de responsabilidades
 
 El proyecto mantiene una separación entre los diferentes componentes:
