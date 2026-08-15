@@ -1,9 +1,7 @@
 """
 Módulo que contiene la clase Restaurante.
-
 Restaurante administra las colecciones de productos
-y usuarios, además de las operaciones necesarias
-para trabajar con dichas colecciones.
+y usuarios.
 """
 
 from modelos.producto import Producto
@@ -13,9 +11,7 @@ from modelos.usuario import Usuario
 class Restaurante:
     """
     Servicio encargado de administrar productos y usuarios.
-
     Las colecciones permanecen dentro de esta clase.
-    main.py no accede directamente a las listas internas.
     """
 
     def __init__(self) -> None:
@@ -69,9 +65,7 @@ class Restaurante:
     ) -> str:
         """
         Actualiza la información de un producto.
-
-        Se verifica que el nuevo código no pertenezca
-        a otro producto.
+        Se verifica que el nuevo código no se repita.
         """
 
         producto_actual = self._buscar_producto_por_codigo(
@@ -184,7 +178,6 @@ class Restaurante:
     def obtener_categorias(self) -> set[str]:
         """
         Devuelve las categorías únicas de los productos.
-
         SET:
         El conjunto elimina automáticamente los valores
         repetidos, permitiendo mostrar cada categoría

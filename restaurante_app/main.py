@@ -1,6 +1,5 @@
 """
 Programa principal del sistema Restaurante App.
-
 Este módulo coordina la interacción con el usuario
 mediante un menú de consola y utiliza los métodos
 proporcionados por Restaurante.
@@ -9,7 +8,6 @@ proporcionados por Restaurante.
 from modelos.producto import Producto
 from modelos.usuario import Usuario
 from servicios.restaurante import Restaurante
-
 
 # TUPLA:
 # Representa las opciones estables del menú principal.
@@ -25,7 +23,6 @@ OPCIONES_MENU: tuple[str, ...] = (
     "8. Mostrar categorías",
     "9. Salir",
 )
-
 
 def mostrar_menu() -> None:
     """
@@ -48,7 +45,6 @@ def registrar_producto(
     """
     Solicita los datos y registra un producto.
     """
-
     print("\n--- REGISTRAR PRODUCTO ---")
 
     try:
@@ -315,7 +311,6 @@ def mostrar_categorias(
 ) -> None:
     """
     Muestra las categorías únicas de los productos.
-
     Restaurante utiliza un conjunto (set) para eliminar
     automáticamente las categorías repetidas.
     """
@@ -336,15 +331,8 @@ def obtener_acciones_menu() -> dict[str, str]:
     """
     Devuelve un diccionario que relaciona cada opción
     del menú con el nombre de la operación correspondiente.
-
     DICT:
     Se utiliza una relación clave → valor.
-
-    Ejemplo:
-
-    "1" → "registrar_producto"
-    "2" → "buscar_producto"
-    "3" → "actualizar_producto"
     """
 
     return {
@@ -358,15 +346,11 @@ def obtener_acciones_menu() -> dict[str, str]:
         "8": "mostrar_categorias",
     }
 
-
 def ejecutar_accion(
     accion: str,
     restaurante: Restaurante,
 ) -> None:
     """
-    Ejecuta la operación correspondiente a la opción
-    seleccionada por el usuario.
-
     El diccionario determina qué nombre de operación
     corresponde a cada opción.
     """
@@ -399,7 +383,6 @@ def ejecutar_accion(
 def main() -> None:
     """
     Punto de entrada de la aplicación.
-
     main.py coordina la interacción con el usuario
     y utiliza los métodos del servicio Restaurante.
     """
@@ -444,7 +427,6 @@ def main() -> None:
                 "\n\nPrograma interrumpido por el usuario."
             )
             break
-
 
 if __name__ == "__main__":
     main()

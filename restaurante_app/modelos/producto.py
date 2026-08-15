@@ -1,15 +1,12 @@
 """
-Módulo que contiene la clase Producto.
-
+Este módulo contiene la clase Producto. 
 La clase Producto representa la información general
 de un producto registrado en el restaurante.
 """
 
-
 class Producto:
     """
     Representa un producto del restaurante.
-
     La clase administra únicamente la información
     correspondiente a cada producto.
     """

@@ -1,15 +1,12 @@
 """
-Módulo que contiene la clase Usuario.
-
+Este módulo contiene la clase Usuario.
 La clase Usuario representa de manera general
 a una persona registrada en el sistema.
 """
 
-
 class Usuario:
     """
     Representa un usuario registrado en el restaurante.
-
     La clase administra únicamente la información
     general correspondiente al usuario.
     """
